@@ -1,0 +1,256 @@
+* {
+	box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+	margin: 0;
+	padding: 0;
+	min-height: 100%;
+    min-width: 100%;
+    max-width: 100%;
+    max-height: 100%;
+    height: 100%;
+    width: 100%;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* -------------------B A R R A -- D E -- N A V E G A C I Ó N ------------------*/
+.contenedor{
+    width: 90%;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+.nav{
+    background-color: #000000;
+    color: white;
+    padding: 1.3rem;
+    position: static;
+    left:0;
+    top:0;
+    right:0;
+    position: sticky;
+    z-index: 9999999999;
+}
+.logo-nav-container{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo {
+    letter-spacing: 0.5rem;
+    font-size: 1.4em;
+}
+.navigation ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.navigation ul li{
+    display: inline-block;
+}
+.navigation ul li a{
+    display: block;
+    padding: 0.5rem 0.8rem;
+    transition: all 0.5s linear;
+    border-radius: 0.5rem;
+}
+.navigation ul li a:hover{
+    background:#2C69A6;
+}
+nav a{
+    text-decoration: none;
+}
+nav a:link{
+    color:white;
+}
+nav a:visited{
+    color:white;
+}
+/* ------------------------- P R E S E N T A C I O N --------------------------------------*/
+header{
+    width : 100%;
+	height:700px;
+    background: linear-gradient(to right, hsla(0, 0%, 0%, 0.307), hsla(0, 0%, 0%, 0.342)), url(../Image/fondoSesion.webp);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    position : relative;
+    font-family: 'Roboto', sans-serif;
+    margin-bottom: 30px;
+}
+.textito-header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    width: 100%;
+    height: 552px;
+    color: white;
+}
+.textito-header h1{
+    font-size: 3rem;
+    margin-bottom: 40px;
+}
+.textito-header h2{
+    font-size: 2rem;
+    font-weight: 1;
+}
+.ola{
+    height: 100%;
+    width: 100%;
+}
+
+/* - - - - - - - - - - - - - C O N T E N I D O - - - - - - - - - - - - - - - - - - -*/
+.buscador{
+    margin: auto;
+    padding: 40px;
+}
+.cuerpo{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: top;
+}
+.texto{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: auto;
+    width: 500px;
+}
+.vision{
+    top: 0;
+}
+.texto h2{
+    font-size: 2rem;
+    margin-bottom: 15px;
+}
+.texto p{
+    font-size: 1.5rem;
+    text-align: justify;
+}
+
+.imgVM{
+    max-width: 100%;
+    height: auto;
+}
+
+
+.container2{
+    margin: auto;
+    padding: 20px;
+    background: rgb(255,255,255);
+    background: linear-gradient(187deg, rgba(255,255,255,1) 0%, rgba(196,196,196,1) 50%, rgba(255,255,255,1) 100%);
+    text-align: center;
+}
+.container2 h1{
+    text-align: initial;
+    margin-left: 10%;
+}
+.filo{
+    margin: 3rem;
+}
+@media screen and (max-width: 1060px) {
+    .container2 h1 {
+        margin-left: 0%;
+    }
+}
+.container2-2{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    flex-basis: calc(33.33% - 100px);
+}
+.card {
+    width: 300px;
+    height: 200px;
+    background-image: linear-gradient(163deg, #00ff75 0%, #3700ff 100%);
+    border-radius: 20px;
+    transition: all .3s;
+    margin: 20px;
+}
+.card2 {
+    width: 300px;
+    height: 200px;
+    background-color: #1a1a1a;
+    border-radius: 20px;
+    transition: all .2s;
+}
+.card2:hover {
+    transform: scale(0.98);
+    border-radius: 20px;
+}
+.card:hover {
+    box-shadow: 0px 0px 30px 1px rgba(0, 255, 117, 0.30);
+}
+
+.valor{
+    color: white;
+    text-align: center;
+    font-size: 1.1rem;
+    padding: 15px;
+    height: 100%;
+}
+.texto-valor{
+    display: flex;
+    justify-content: center;
+    height: 140.4px;
+    font-size: 1rem;
+    text-align: center;
+    align-items: center;
+}
+
+
+
+.container3{
+    background-color: #ffffff;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1600 900'%3E%3Cdefs%3E%3ClinearGradient id='a' x1='0' x2='0' y1='1' y2='0' gradientTransform='rotate(0,0.5,0.5)'%3E%3Cstop offset='0' stop-color='%230FF'/%3E%3Cstop offset='1' stop-color='%23CF6'/%3E%3C/linearGradient%3E%3ClinearGradient id='b' x1='0' x2='0' y1='0' y2='1'%3E%3Cstop offset='0' stop-color='%23F00'/%3E%3Cstop offset='1' stop-color='%23FC0'/%3E%3C/linearGradient%3E%3C/defs%3E%3Cg fill='%23FFF' fill-opacity='0' stroke-miterlimit='10'%3E%3Cg stroke='url(%23a)' stroke-width='17.16'%3E%3Cpath transform='translate(-36.05 -2.3999999999999995) rotate(-4.35 1409 581) scale(0.9552589999999999)' d='M1409 581 1450.35 511 1490 581z'/%3E%3Ccircle stroke-width='5.720000000000001' transform='translate(-60.5 32) rotate(0.10000000000000009 800 450) scale(0.9979369999999999)' cx='500' cy='100' r='40'/%3E%3Cpath transform='translate(-1.6000000000000014 -10.5) rotate(-8.5 401 736) scale(0.9979369999999999)' d='M400.86 735.5h-83.73c0-23.12 18.74-41.87 41.87-41.87S400.86 712.38 400.86 735.5z'/%3E%3C/g%3E%3Cg stroke='url(%23b)' stroke-width='5.2'%3E%3Cpath transform='translate(192 6.2) rotate(-1.55 150 345) scale(1.005753)' d='M149.8 345.2 118.4 389.8 149.8 434.4 181.2 389.8z'/%3E%3Crect stroke-width='11.440000000000001' transform='translate(-23.5 -89.5) rotate(-21.60000000000001 1089 759)' x='1039' y='709' width='100' height='100'/%3E%3Cpath transform='translate(-85.6 18.4) rotate(-3.6000000000000005 1400 132) scale(0.905)' d='M1426.8 132.4 1405.7 168.8 1363.7 168.8 1342.7 132.4 1363.7 96 1405.7 96z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+    background-attachment: fixed;
+    background-size: cover;
+    text-align: center;
+}
+.objetivo{
+    padding: 1rem;
+    padding: 40px;
+}
+.estrategias{
+    grid-area: estra;
+}
+.politicas{
+    grid-area: poli;
+}
+.especificos{
+    grid-area: espe;
+}
+.container3-1{
+    display: grid;
+    grid-template-areas: 
+            'estra poli'
+            'espe espe';
+    gap: 30px;
+    padding: 20px;
+}
+
+@media screen and (max-width: 800px) {
+    .container3-1 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+}
+
+.container3-1 h1,.container3-1 li{
+    margin: 10px;
+}
+.estrate,.politi{
+    text-align: justify;
+    list-style-type: none;
+}
+.especi{
+    text-align: center;
+    list-style-type: none;
+}

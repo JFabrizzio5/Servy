@@ -1,0 +1,193 @@
+body {
+  background-color: #D3D4E9;
+  margin: 0px;
+  padding: 0px;
+  font: Geneva, Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.nav{
+    background-color: #000000;
+    padding: 0.3rem;
+    position: static;
+    left:0;
+    top:0;
+    right:50px;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.naveG{
+    background-color: #E2E4F5;
+    padding: 0.3rem;
+    position: static;
+    left:0;
+    bottom:0;
+    right:50px;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+p{
+    width: 200px;
+    font-family: 'Verdana';
+    color: white;
+    font-size: 15px;
+    transition: all 0.5s linear;
+    display: inline-block;
+}
+
+p:hover{
+    width: 300px;
+    font-size: 19px;
+    color: black;
+    text-shadow: 1px 1px #E5F4FD, -1px -1px #E5FDEC;
+}
+
+
+.pie{
+    width: 500px;
+    font-family: 'Verdana';
+    color: black;
+    font-size: 13px;
+    transition: all 0.5s linear;
+    display: inline-block;
+}
+
+.pie:hover{
+    width: 700px;
+    font-size: 17px;
+    text-shadow: 3px 3px 4px #C5FFC9, -3px -3px 4px #C5FFC9;
+}
+
+input{
+    width: 300px;
+    font-size: 16px;
+    background-color:#006699;
+    color:#FFFFFF;
+}
+
+th{
+    background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #006699), color-stop(1, #00557F) );
+    background:-moz-linear-gradient( center top, #006699 5%, #00557F 100% );
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#006699', endColorstr='#00557F');
+    background-color:#006699;
+    color:#FFFFFF;
+    font-size: 15px;
+    font-weight: bold;
+    border: 0px;
+    font-family: Arial;
+}
+
+td{
+    background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #006699), color-stop(1, #00557F) );
+    background:-moz-linear-gradient( center top, #006699 5%, #00557F 100% );
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#006699', endColorstr='#00557F');
+    background-color:#006699;
+    color:#FFFFFF;
+    font-size: 15px;
+    font-weight: bold;
+    border: 0px;
+    font-family: Arial;
+}
+
+tr{
+    font-size: 15px;
+    font-weight: bold;
+    font-family: Arial;
+    background: #F1F1F3;
+}
+
+.textito-header{
+    background: linear-gradient(#B9DADC,#D3D4E9);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    width: 100%;
+    height: 180px;
+    color: #333333;
+}
+
+.formulario{
+    width: 45%;
+    background: #F1F1F3;
+    font-size: 17px;
+    border-radius: 10px;
+}
+
+.instruccion{
+    color: black;
+    font-size: 18px;
+}
+
+.solucion{
+    width: 95%;
+    color:black;
+    font-size: 16px;
+}
+
+button{
+    color:white;
+    background-color:#006699;
+    color:#FFFFFF;
+    width: 140px;
+    font-size: 14px;
+    border-radius: 10px;
+    transition: all 0.5s linear;
+}
+
+button:hover{
+    color:white;
+    font-size: 15px;
+    background: #38394A;
+    border-radius: 10px;
+    padding-top: 1px;
+    padding-bottom: 1px;
+}
+
+.Perfiles{
+    color:black;
+    font-size: 12px;
+    background: #E3ECEC;
+    border-radius: 10px;
+    box-shadow: 4px black;
+    transition: all .4s;
+    width: 80%;
+    height: 450px;
+}
+
+.Perfiles:hover {
+    box-shadow: 0px 0px 60px 2px rgba(15, 17, 73, 0.30);
+}
+
+.Comentarios{
+    color:black;
+    font-size: 12px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 4px black;
+    transition: all .4s;
+    width: 60%;
+    height: 240px;
+}
+
+.Comentarios:hover {
+    box-shadow: 0px 0px 60px 2px rgba(15, 17, 73, 0.30);
+}
+
+.comenta{
+    color:black;
+    font-size: 17px;
+    font-family: "Arial";
+}
+
+.comenta02{
+    color:black;
+    font-size: 15px;
+    font-family: "Arial";
+}

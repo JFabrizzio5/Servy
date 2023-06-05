@@ -1,0 +1,387 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+	margin: 0;
+	padding: 0;
+	min-height: 100%;
+    min-width: 100%;
+    max-width: 100%;
+    max-height: 100%;
+    height: 100%;
+    width: 100%;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* -------------------B A R R A -- D E -- N A V E G A C I Ó N ------------------*/
+.contenedor{
+    width: 90%;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+.nav{
+    background-color: #000000;
+    color: white;
+    padding: 1.3rem;
+    position: static;
+    left:0;
+    top:0;
+    right:0;
+    position: sticky;
+    z-index: 9999999999;
+}
+.logo-nav-container{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo {
+    letter-spacing: 0.5rem;
+    font-size: 1.4em;
+}
+.navigation ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.navigation ul li{
+    display: inline-block;
+}
+.navigation ul li a{
+    display: block;
+    padding: 0.5rem 0.8rem;
+    transition: all 0.5s linear;
+    border-radius: 0.5rem;
+}
+.navigation ul li a:hover{
+    background:#2C69A6;
+}
+nav a{
+    text-decoration: none;
+}
+nav a:link{
+    color:white;
+}
+nav a:visited{
+    color:white;
+}
+
+/* - - - - - - - - - - - - - H E A D E R - - D E S P L A Z A R - - - - - - - - - - - - - - - - */
+.slides{
+    display: flex;
+    overflow: scroll;
+    padding: 24px;
+    width: 90%;
+    height: auto;
+    scroll-snap-type: x mandatory;
+    scroll-padding: 24px;
+    gap: 50px;
+    margin: auto;
+    overflow-y: hidden;
+}
+.slides .perfil{
+    scroll-snap-align: start;
+}
+.slides::-webkit-scrollbar{
+    background: #eee;
+    border-radius: 8px;
+    height: 6px;
+}
+/* Ponemos un color de fondo y redondeamos las esquinas del thumb */
+.slides::-webkit-scrollbar-thumb {
+    background: #ccc;
+    border-radius: 8px;
+}
+/* Cambiamos el fondo y agregamos una sombra cuando esté en hover */
+.slides::-webkit-scrollbar-thumb:hover {
+    background: #b3b3b3;
+    box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.2);
+}
+/* Cambiamos el fondo cuando esté en active */
+.slides::-webkit-scrollbar-thumb:active {
+    background-color: #999999;
+}
+.slider::-webkit-scrollbar-track {
+    background: #e1e1e1;
+    border-radius: 4px;
+}
+/* Cambiamos el fondo cuando esté en active o hover */
+.slider::-webkit-scrollbar-track:hover,
+.slider::-webkit-scrollbar-track:active {
+  background: #d4d4d4;
+}
+/*
+.slider {
+  width: 90%;
+  height: auto;
+  overflow: hidden;
+  margin: 0 auto;
+}
+.slides {
+  display: flex;
+  width: 100%;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.perfil{
+  flex: 1;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.slides::before, .slides::after {
+  content: "";
+  flex: 1;
+  height: auto;
+}
+
+.slides::before {
+  background: url("slide4.jpg") no-repeat center center / cover;
+}
+.slides::after {
+  background: url("slide1.jpg") no-repeat center center / cover;
+}
+
+.slides {
+  display: flex;
+  width: 300%;
+  animation: slide 40s infinite;
+}
+.perfil{
+    margin: 15px;
+}
+@keyframes slide {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+*/
+/*___________________________________________ Perfilitos________________*/
+.task {
+    position: relative;
+    color: #2e2e2f;
+    cursor: move;
+    background-color: #fff;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: rgba(99, 99, 99, 0.1) 0px 2px 8px 0px;
+    border: 3px dashed transparent;
+    border-color: #ECECEC;
+    max-width: 350px;
+}
+
+.task:hover {
+    box-shadow: rgba(99, 99, 99, 0.3) 0px 2px 8px 0px;
+    border-color: rgba(162, 179, 207, 0.2) !important;
+}
+
+.task p {
+    font-size: 15px;
+    margin: 1.2rem 0;
+}
+
+.tag {
+    border-radius: 100px;
+    padding: 4px 13px;
+    font-size: 12px;
+    color: #ffffff;
+    background-color: #1389eb;
+}
+
+.tags {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.options {
+    background: transparent;
+    border: 0;
+    color: #c4cad3;
+    font-size: 17px;
+}
+
+.options svg {
+    fill: #9fa4aa;
+    width: 20px;
+}
+
+.stats {
+    position: relative;
+    width: 100%;
+    color: #9fa4aa;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.comen{
+    display: flex;
+    width: 25px;
+}
+.linkComent{
+    width: 38px;
+    padding: 0px;
+    height: 20px;
+    border-radius: 0px;
+    text-decoration: none;
+}
+.stats div {
+    margin-right: 1rem;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.stats svg {
+    margin-right: 5px;
+    height: 100%;
+    stroke: #9fa4aa;
+}
+
+.viewer span {
+    height: 30px;
+    width: 30px;
+    background-color: rgb(28, 117, 219);
+    margin-right: -10px;
+    border-radius: 50%;
+    border: 1px solid #fff;
+    display: grid;
+    align-items: center;
+    text-align: center;
+    font-weight: bold;
+    color: #fff;
+    padding: 2px;
+}
+
+.viewer span svg {
+    stroke: #fff;
+}
+/* - - - - - - - - - - - - - F I L T R O S - - - - - - - - - - - - - - - - - - */
+.opc{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 45px;
+}
+.filtrito{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 30px;
+}
+.perfilitos{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 20px;
+}
+
+
+
+
+/*________________________ B U S C A R ___________________________*/
+.buscador {
+  position: relative;
+  --size-button: 40px;
+}
+
+.input {
+  padding-left: var(--size-button);
+  height: var(--size-button);
+  font-size: 15px;
+  border: none;
+  color: #000;
+  outline: none;
+  width: var(--size-button);
+  transition: all ease 0.3s;
+  background-color: #1389eb;
+  box-shadow: 1.5px 1.5px 3px #0e0e0e, -1.5px -1.5px 3px rgb(95 94 94 / 25%), inset 0px 0px 0px #0e0e0e, inset 0px -0px 0px #5f5e5e;
+  border-radius: 50px;
+  cursor: pointer;
+}
+
+.input:focus,
+.input:not(:invalid) {
+  width: 200px;
+  cursor: text;
+  box-shadow: 0px 0px 0px #0e0e0e, 0px 0px 0px rgb(95 94 94 / 25%), inset 1.5px 1.5px 3px #0e0e0e, inset -1.5px -1.5px 3px #5f5e5e;
+}
+
+.input:focus + .icon,
+.input:not(:invalid) + .icon {
+  pointer-events: all;
+  cursor: pointer;
+}
+
+.buscador .icon {
+  position: absolute;
+  width: var(--size-button);
+  height: var(--size-button);
+  top: 0;
+  left: 0;
+  padding: 8px;
+  pointer-events: none;
+}
+
+.buscador .icon svg {
+  width: 100%;
+  height: 100%;
+}
+/*___________________________F I L T R I T O S _______________________________*/
+
+.selecciones {
+    position: relative;
+    width: 100px;
+}
+.selecciones select{
+    width: 100%;
+    padding: 10px;
+    outline: none;
+    border: none;
+    color: #000;
+    font-size: .8em;
+    background: transparent;
+    border-left: 2px solid #000;
+    border-bottom: 2px solid #000;
+    transition: 0.1s;
+    border-bottom-left-radius: 8px;
+}
+.selecciones span{
+    /* margin-top: 5px; */
+    position: absolute;
+    right: 0;
+    transform: translateY(-7px);
+    /* margin-left: 10px; */
+    /* padding: 10px; */
+    pointer-events: none;
+    font-size: 12px;
+    color: #000;
+    text-transform: uppercase;
+    transition: 0.5s;
+    /* letter-spacing: 3px; */
+    border-radius: 8px;
+}
+.selecciones select:valid~span,
+.selecciones select:focus~span {
+    font-size: 0.5em;
+    padding: 5px 15px;
+    background: #000;
+    letter-spacing: 0.1em;
+    color: #fff;
+    border: 2px;
+}
+.selecciones select:valid,
+.selecciones select:focus {
+    border: 2px solid #000;
+    border-radius: 8px;
+}

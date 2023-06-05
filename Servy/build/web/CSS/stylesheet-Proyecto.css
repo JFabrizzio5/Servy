@@ -1,0 +1,92 @@
+* {
+	box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+	margin: 0;
+	padding: 0;
+	min-height: 100%;
+    min-width: 100%;
+    max-width: 100%;
+    max-height: 100%;
+    height: 100%;
+    width: 100%;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* -------------------B A R R A -- D E -- N A V E G A C I Ó N ------------------*/
+.contenedor{
+    width: 90%;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+.nav{
+    background-color: #000000;
+    color: white;
+    padding: 1.3rem;
+    position: static;
+    left:0;
+    top:0;
+    right:0;
+    position: sticky;
+    z-index: 9999999999;
+}
+.logo-nav-container{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo {
+    letter-spacing: 0.5rem;
+    font-size: 1.4em;
+}
+.navigation ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.navigation ul li{
+    display: inline-block;
+}
+.navigation ul li a{
+    display: block;
+    padding: 0.5rem 0.8rem;
+    transition: all 0.5s linear;
+    border-radius: 0.5rem;
+}
+.navigation ul li a:hover{
+    background:#2C69A6;
+}
+nav a{
+    text-decoration: none;
+}
+nav a:link{
+    color:white;
+}
+nav a:visited{
+    color:white;
+}
+
+/* ------------------------- P R E S E N T A C I O N --------------------------------------*/
+header{
+    width : 100%;
+	height:700px;
+    background: rgb(255,195,237);
+    background: linear-gradient(90deg, rgba(255,195,237,1) 0%, rgba(98,191,255,1) 48%, rgba(255,195,237,1) 100%);
+    position : relative;
+    margin-bottom: 30px;
+}
+.imagencita{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 552px;
+    image-rendering: optimizeQuality;
+    position: absolute;
+}
+.imagencita img{
+    height: 550px;
+    width: auto;
+}
